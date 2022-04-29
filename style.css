@@ -1,0 +1,39 @@
+.boards-wrapper {
+    display: flex;
+}
+
+.board {
+    width: 440px;
+    border: 1px solid black;
+    margin: 40px auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.board > div {
+    width: 40px;
+    height: 40px;
+    outline: 1px solid #aaa;
+    text-align: center;
+    line-height: 40px;
+}
+
+.board > div:hover:not([data-state="2"]) {
+    background: #CCC !important;
+}
+
+.board > div[data-state="1"] {
+    background: black;
+}
+
+.board > div[data-state="2"] {
+    background: red;
+}
+
+.board > div[data-state="3"] {
+    background: #CCC;
+}
+
+/*#his-board > div[data-state="1"] {*/
+/*    background: none;*/
+/*}*/
